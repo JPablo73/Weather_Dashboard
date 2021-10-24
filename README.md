@@ -24,12 +24,12 @@ A weather app. that allows the user to check current weather and 5-day forecast 
 - Access current weather data from major cities around the globe!
 
 - API's used :
-  1. [Current Weather Data](https://openweathermap.org/current)
-  2. [5 day / 3 hour Forecast](https://openweathermap.org/forecast5)
-  3. [UV Index](https://openweathermap.org/api/uvi)
+  - [Current Weather Data](https://openweathermap.org/current)
+  - [5 day / 3 hour Forecast](https://openweathermap.org/forecast5)
+  - [UV Index](https://openweathermap.org/api/uvi)
 
-#### [jQuery](https://jquery.com/) :
+## - [jQuery](https://jquery.com/) :
 
-#### [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) :
+### - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) :
 
-#### [Bootstrap](https://getbootstrap.com/) :
+### - [Bootstrap](https://getbootstrap.com/) :

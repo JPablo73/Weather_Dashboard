@@ -102,15 +102,15 @@ function getUVIndex(uvQueryURL) {
     var uvButton = $("<button>").attr("type", "button").text(uvValue);
 
     if (uvValue >= 0 && uvValue <= 3) {
-      //low : green
+      //low
       $("#uv-index").text("UV : Low, ").append(uvButton);
       uvButton.addClass("btn bg-success");
     } else if (uvValue >= 3 && uvValue <= 6) {
-      //moderate : yellow
+      //moderate
       $("#uv-index").text("UV : Moderate, ").append(uvButton);
       uvButton.addClass("btn yellowBtn");
     } else if (uvValue >= 6 && uvValue <= 8) {
-      //high : orange
+      //high
       $("#uv-index").text("UV : High, ").append(uvButton);
       uvButton.addClass("btn orangeBtn");
     } else if (uvValue >= 8 && uvValue <= 10) {
@@ -127,7 +127,6 @@ function getUVIndex(uvQueryURL) {
 
 //function to show 5 days forecast
 function showForecast(forecastQueryURL) {
-  // api.openweathermap.org/data/2.5/forecast?id={city ID}&cnt=5&units=imperial&appid={your api key}
   var temp, humidity, icon;
 
   console.log("Forecast query URL : " + forecastQueryURL);
@@ -148,8 +147,6 @@ function showForecast(forecastQueryURL) {
       var dateForecast = dateArr[1] + "/" + dateArr[2] + "/" + dateArr[0];
       var time = list[i].dt_txt.split(" ")[1];
 
-      // console.log("date : "+dateForecast+" time : "+time);
-
       if (time === "12:00:00") {
         temp = list[i].main.temp;
         humidity = list[i].main.humidity;
@@ -160,7 +157,7 @@ function showForecast(forecastQueryURL) {
 
         var fDate = $("<h5>").addClass("card-text").text(dateForecast);
 
-        // https://openweathermap.org/img/wn/10d.png
+        // weather icons
         var imgIcon = $("<img>").attr(
           "src",
           "https://openweathermap.org/img/wn/" + icon + ".png"
@@ -220,7 +217,7 @@ $(document).ready(function () {
 
   var history = JSON.parse(localStorage.getItem("history"));
 
-  // history exists in local storage
+  // data stored in local storage
   if (history) {
     var lastSearchedCity = history[0];
     searchCurrentWeather(lastSearchedCity);
