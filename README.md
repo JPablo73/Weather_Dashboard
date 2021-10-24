@@ -6,7 +6,7 @@ A weather app. that allows the user to check current weather and 5-day forecast 
 
 ## Deployed Website :
 
-[Weather Dashboard](/)
+[Weather Dashboard](https://jpablo73.github.io/Weather_Dashboard//)
 
 # Table of Contents
 
