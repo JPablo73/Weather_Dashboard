@@ -1,25 +1,53 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 header {
-  background-color: rgb(88, 88, 185);
+  background-image: linear-gradient(
+    to right,
+    rgb(49, 49, 110),
+    rgb(112, 112, 201)
+  );
 }
 
 .navbar-brand {
-  font-size: 40px !important;
+  font-size: 40px;
   padding: 0px;
   color: white;
 }
 
+#forecast {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+/* .card-body {
+  background-color: greenyellow;
+} */
+
 .yellowBtn {
-  background-color: yellow;
+  background-color: rgb(255, 255, 0);
 }
 
 .orangeBtn {
-  background-color: orange;
+  background-color: rgb(255, 165, 0);
 }
 
 .violetBtn {
-  background-color: violet;
+  background-color: rgb(224, 44, 224);
 }
 
 #historylist li:hover {
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  #forecast {
+    display: block;
+    flex-wrap: nowrap;
+    max-width: 400px;
+  }
 }
